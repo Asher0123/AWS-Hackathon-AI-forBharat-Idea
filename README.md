@@ -1,1 +1,5 @@
 # AWS-Hackathon-AI-forBharat-Idea
+
+# AI-Powered Demand-First Market Intelligence Platform
+
+This project is developed for the AWS AI for Bharat Hackathon. It addresses the challenge of high retail business failure rates and unmet local demand by creating an AI-powered market intelligence platform for neighbourhood retail and MSMEs. The platform scrapes and analyzes citizen feedback from Google Maps, social media, and local forums using Amazon Bedrock to identify latent demand patterns and pain points. By combining these AI-driven insights with open data, location intelligence through Amazon Location Service, and geospatial analysis using PostgreSQL with PostGIS, the platform helps entrepreneurs make data-driven decisions about what businesses to open, where to open them, and whether they are commercially viable. This demand-first approach shifts retail planning from intuition-based to evidence-based, reducing business risk and improving access to essential services in local communities.
