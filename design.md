@@ -105,7 +105,6 @@ The MVP uses a minimal set of AWS services to validate the core concept:
 **Features:**
 
 **Citizen View:**
-- Submit demand form
 - View top demands list
 
 **Entrepreneur View:**
@@ -192,7 +191,6 @@ The MVP uses a minimal set of AWS services to validate the core concept:
    - Present WHY/WHERE/HOW recommendations based on combined data
 
 ---
-
 ## Key Design Considerations
 
 1. **Data Processing**: Batch process demands periodically for efficiency
@@ -207,11 +205,10 @@ The MVP uses a minimal set of AWS services to validate the core concept:
 ## Future Enhancements & Production Roadmap(Concept)
 
 ### Phase 1: Enhanced AI/ML Capabilities
-- **Custom ML Models**: Train custom models with Amazon SageMaker for:
+- **Custom ML Models**: Train custom models for:
   - More accurate demand prediction
   - Advanced clustering algorithms for neighborhood segmentation
   - Viability prediction models based on historical business success data
-- **Real-time NLP Processing**: Stream processing for immediate sentiment analysis with Bedrock
 
 ### Phase 2: Data Pipeline & Integration
 - **AWS Glue ETL Pipelines**: Automated data integration from multiple open data sources
@@ -222,6 +219,7 @@ The MVP uses a minimal set of AWS services to validate the core concept:
   - Business registry APIs
   - Traffic and mobility data
 - **Data Lake Architecture**: Comprehensive data lake on S3 with Athena for analytics
+- **Conversational AI Assistant**: Interactive Q&A system powered by RAG to help users explore location insights, learn about historical data and demand patterns through natural language queries
 
 ### Phase 3: Advanced Analytics & Intelligence
 - **Amazon QuickSight Dashboards**: Replace Chart.js with embedded QuickSight for:
@@ -231,6 +229,7 @@ The MVP uses a minimal set of AWS services to validate the core concept:
 - **Predictive Analytics**: Forecast future demand trends using SageMaker
 - **Success Tracking**: Monitor businesses launched via platform and track survival rates
 - **Competitive Intelligence**: Automated competitor analysis and market dynamics
+- **AI-Powered Guidance**: Intelligent assistant to guide entrepreneurs through location selection, viability assessment, and business planning based on platform insights
 
 ### Phase 4: Performance & Scalability
 - **Caching Layer**: Amazon ElastiCache (Redis) for:
@@ -238,24 +237,10 @@ The MVP uses a minimal set of AWS services to validate the core concept:
   - API response caching
   - Session management
 - **Asynchronous Processing**: Amazon SQS for heavy ML workloads
-- **Multi-AZ Deployment**: High availability with automatic failover
 - **Read Replicas**: PostgreSQL read replicas for query performance
 - **Auto-scaling**: Dynamic scaling based on demand patterns
 
-### Phase 5: Security & Compliance
-- **Enhanced Authentication**: 
-  - Multi-factor authentication (MFA)
-  - Social login integration
-  - Role-based access control (RBAC)
-- **Data Governance**:
-  - GDPR compliance implementation
-  - Data retention policies
-  - Right to be forgotten
-  - Audit logging with CloudTrail
-- **API Security**: AWS WAF for DDoS protection and threat detection
-- **Encryption**: KMS for data at rest, enhanced TLS configurations
-
-### Phase 6: User Experience & Accessibility
+### Phase 5: User Experience & Accessibility
 - **Voting & Community Features**:
   - Upvote/downvote system for demand requests
   - Community-driven demand prioritization
@@ -265,13 +250,8 @@ The MVP uses a minimal set of AWS services to validate the core concept:
   - English, Hindi, and regional Indian languages
   - Localized content and recommendations
 - **Progressive Web App (PWA)**: Offline capabilities
-- **Accessibility Compliance**: WCAG 2.1 AA standards
-- **Notification System**: Amazon SNS for:
-  - Email notifications
-  - SMS alerts
-  - Push notifications
 
-### Phase 7: Advanced Features
+### Phase 6: Advanced Features
 - **Financing Integration**: Connect entrepreneurs with funding platforms
 - **Mentorship Platform**: Business planning and advisory tools
 - **Supply Chain Connections**: Link retailers with suppliers
@@ -279,28 +259,12 @@ The MVP uses a minimal set of AWS services to validate the core concept:
 - **Community Engagement**: Forums and discussion boards
 - **Success Stories**: Showcase businesses launched via platform
 
-### Phase 8: Monitoring & Operations
-- **Comprehensive Monitoring**:
-  - Amazon CloudWatch dashboards
-  - AWS X-Ray for distributed tracing
-  - Custom business metrics and KPIs
-- **Alerting**: SNS-based alerts for system health and anomalies
-- **CI/CD Pipeline**:
-  - AWS CodePipeline for deployment automation
-  - Blue-green deployments for zero downtime
-  - Automated testing and rollback
-- **Cost Optimization**:
-  - Reserved instances for predictable workloads
-  - S3 lifecycle policies
-  - CloudWatch cost anomaly detection
-
-### Phase 9: Geographic Expansion
+### Phase 7: Geographic Expansion
 - **Multi-region Deployment**: Expand beyond single region
-- **Global CDN**: CloudFront edge locations for worldwide access
 - **Localized Data**: Region-specific open data integration
 - **International Markets**: Adapt platform for markets beyond India
 
-### Phase 10: Advanced Business Intelligence
+### Phase 8: Advanced Business Intelligence
 - **Market Trend Analysis**: Long-term trend identification
 - **Seasonal Patterns**: Detect and predict seasonal demand variations
 - **Economic Indicators**: Integrate macroeconomic data
