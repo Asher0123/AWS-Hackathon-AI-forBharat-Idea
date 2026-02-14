@@ -74,11 +74,14 @@ The MVP uses a minimal set of AWS services to validate the core concept:
 - Distance calculations for proximity analysis using PostGIS
 - Clustering: group demands by area using SQL queries
 - Competition data analysis
+- Demand-supply gap detection at neighbourhood level
+- Footfall estimation using spatial patterns, demographic data, and POI density
 
 **Implementation:**
 - PostgreSQL with PostGIS for location queries and spatial analysis
 - SQL aggregations (COUNT, GROUP BY)
 - Demographic data integration
+- Spatial pattern analysis for footfall estimation
 
 ---
 
@@ -88,12 +91,15 @@ The MVP uses a minimal set of AWS services to validate the core concept:
 
 **Approach:**
 - Use Amazon Bedrock to generate WHY/WHERE/HOW explanations
-- Hybrid scoring: heuristic baseline combined with AI-driven demand inference and LLM reasoning and clustering.
+- Hybrid scoring: heuristic baseline combined with AI-driven demand inference and LLM reasoning and clustering
+- AI-driven location suitability scoring and opportunity ranking
 - Template-based reports with AI-generated insights
 
 **Implementation:**
 - Lambda function with Bedrock prompt engineering
 - Business logic for viability assessment
+- Location suitability scoring algorithm
+- Opportunity ranking based on multiple factors (demand, competition, footfall, demographics)
 - JSON response with recommendations
 
 ---
@@ -109,8 +115,10 @@ The MVP uses a minimal set of AWS services to validate the core concept:
 
 **Entrepreneur View:**
 - Heatmap (color-coded areas by demand)
-- Top opportunities list
+- Top opportunities list (ranked by suitability)
 - Report card (WHY/WHERE/HOW)
+- Demand-supply gap visualization
+- Footfall estimates for locations
 
 ---
 
